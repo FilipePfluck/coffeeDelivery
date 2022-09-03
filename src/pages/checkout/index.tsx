@@ -16,6 +16,10 @@ const Content = styled('main', {
   padding: 16,
   display: 'flex',
   gap: 24,
+
+  '@bp2': {
+    flexDirection: 'column',
+  },
 })
 
 const SectionContainer = styled('div', {
@@ -42,7 +46,7 @@ const deliveryFormValidationSchema = zod.object({
   cep: zod.string().min(8, 'Informe o CEP'),
   street: zod.string().min(1, 'Informe a rua'),
   number: zod.string().min(1, 'Informe o número'),
-  complement: zod.string(),
+  complement: zod.string().optional(),
   neighbourhood: zod.string().min(1, 'Informe o bairro'),
   city: zod.string().min(1, 'Informe a cidade'),
   uf: zod.string().min(2, 'Informe a UF'),

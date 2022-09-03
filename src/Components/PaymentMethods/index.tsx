@@ -1,9 +1,12 @@
 import { CurrencyDollar, CreditCard, Bank, Money } from 'phosphor-react'
+import { useState } from 'react'
 import { Button } from '../Button'
 
 import * as S from './styles'
 
 export const PaymentMethods = () => {
+  const [paymentOptionId, setPaymentOptionId] = useState(1)
+
   return (
     <S.PaymentMethodsContainer>
       <S.PaymentHeader>
@@ -16,15 +19,30 @@ export const PaymentMethods = () => {
         </div>
       </S.PaymentHeader>
       <S.ButtonsContainer>
-        <Button>
+        <Button
+          isSelected={paymentOptionId === 1}
+          onClick={() => {
+            setPaymentOptionId(1)
+          }}
+        >
           <CreditCard size={18} />
           CARTÃO DE CRÉDITO
         </Button>
-        <Button>
+        <Button
+          isSelected={paymentOptionId === 2}
+          onClick={() => {
+            setPaymentOptionId(2)
+          }}
+        >
           <Bank size={18} />
           CARTÃO DE DÉBITO
         </Button>
-        <Button>
+        <Button
+          isSelected={paymentOptionId === 3}
+          onClick={() => {
+            setPaymentOptionId(3)
+          }}
+        >
           <Money size={18} />
           DINHEIRO
         </Button>

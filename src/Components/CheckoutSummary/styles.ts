@@ -8,6 +8,10 @@ export const CheckoutSummaryContainer = styled('section', {
   flexDirection: 'column',
   marginLeft: 'auto',
   width: 400,
+
+  '@bp2': {
+    width: '100%',
+  },
 })
 
 export const CoffeeItem = styled('div', {
@@ -28,6 +32,10 @@ export const CoffeeItem = styled('div', {
   span: {
     fontWeight: 'bold',
     marginBottom: 'auto',
+  },
+
+  '@bp1': {
+    flexDirection: 'column',
   },
 })
 

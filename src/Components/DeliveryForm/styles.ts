@@ -44,6 +44,10 @@ export const InputRow = styled('div', {
   display: 'flex',
   gap: 16,
   width: '100%',
+
+  '@bp1': {
+    flexDirection: 'column',
+  },
 })
 
 export const Input = styled('input', {
@@ -65,9 +69,15 @@ export const Input = styled('input', {
     size: {
       extraSmall: {
         width: 60,
+        '@bp1': {
+          width: '100%',
+        },
       },
       small: {
         width: 200,
+        '@bp1': {
+          width: '100%',
+        },
       },
       auto: {
         flex: 1,

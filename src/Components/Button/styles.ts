@@ -20,4 +20,13 @@ export const Button = styled('button', {
   '&:hover': {
     background: '$hover',
   },
+
+  variants: {
+    isSelected: {
+      true: {
+        background: '$purpleLight',
+        border: '1px solid $purple',
+      },
+    },
+  },
 })

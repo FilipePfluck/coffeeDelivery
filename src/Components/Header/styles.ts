@@ -19,7 +19,7 @@ const HeaderContent = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: 12,
+  padding: 8,
   borderRadius: 8,
 })
 
@@ -32,7 +32,24 @@ export const Location = styled(HeaderContent, {
 })
 
 export const Cart = styled(HeaderContent, {
+  position: 'relative',
   backgroundColor: '$yellowLight',
   color: '$yellowDark',
   cursor: 'pointer',
+})
+
+export const Badge = styled('div', {
+  position: 'absolute',
+  top: -10,
+  right: -10,
+  height: 20,
+  width: 20,
+  borderRadius: '50%',
+  background: '$yellowDark',
+  color: 'white',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontSize: 12,
+  fontWeight: 'bold',
 })

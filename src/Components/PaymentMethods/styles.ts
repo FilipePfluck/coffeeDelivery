@@ -42,7 +42,12 @@ export const ButtonsContainer = styled('div', {
   button: {
     width: '100%',
     justifyContent: 'flex-start',
-    padding: '0 16px',
+    padding: '16px',
     fontSize: 12,
+  },
+
+  '@bp1': {
+    flexDirection: 'column',
+    height: 'auto',
   },
 })

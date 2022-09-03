@@ -14,6 +14,13 @@ export const CoffeeListContainer = styled('div', {
     fontFamily: '"Baloo 2", cursive',
     color: '$subtitle',
   },
+
+  '@bp1': {
+    '>strong': {
+      fontSize: 24,
+      marginLeft: 16,
+    },
+  },
 })
 
 export const Grid = styled('div', {
@@ -21,4 +28,17 @@ export const Grid = styled('div', {
   gridTemplateColumns: '1fr 1fr 1fr 1fr',
   gap: 24,
   marginTop: 24,
+
+  '@bp3': {
+    gridTemplateColumns: '1fr 1fr 1fr',
+  },
+
+  '@bp2': {
+    gridTemplateColumns: '1fr 1fr',
+    padding: 16,
+  },
+
+  '@bp1': {
+    gridTemplateColumns: '1fr',
+  },
 })

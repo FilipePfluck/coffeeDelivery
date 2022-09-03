@@ -12,6 +12,27 @@ export const BannerContent = styled('div', {
   maxWidth: 1100,
   margin: '0 auto',
   padding: '48px 16px',
+
+  '@bp3': {
+    flexDirection: 'column',
+    maxWidth: 640,
+    margin: '0 auto',
+
+    img: {
+      width: 476,
+      height: 360,
+    },
+  },
+
+  '@bp1': {
+    padding: '24px 16px',
+
+    img: {
+      display: 'none',
+      visibility: 'hidden',
+      position: 'absolute',
+    },
+  },
 })
 
 export const LeftSection = styled('section', {
@@ -32,6 +53,27 @@ export const LeftSection = styled('section', {
   p: {
     fontSize: 20,
     color: '$subtitle',
+
+    '@bp1': {
+      fontSize: 18,
+    },
+  },
+
+  '@bp3': {
+    marginBottom: 64,
+  },
+
+  '@bp1': {
+    maxWidth: 360,
+    margin: '0 auto',
+
+    h1: {
+      fontSize: 32,
+    },
+
+    p: {
+      fontSize: 18,
+    },
   },
 })
 
@@ -40,6 +82,12 @@ export const AttractivesGrid = styled('div', {
   gridTemplateColumns: '1fr 1.2fr',
   gap: 12,
   marginTop: 60,
+
+  '@bp1': {
+    display: 'flex',
+    flexDirection: 'column',
+    margin: '24px auto',
+  },
 })
 
 export const Attractive = styled('div', {

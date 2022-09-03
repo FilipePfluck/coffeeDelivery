@@ -23,6 +23,7 @@ export const {
       subtitle: '#403937',
       title: '#272221',
 
+      red: '#AB222E',
       purpleDark: '#4B2995',
       purple: '#8047F8',
       purpleLight: '#EBE5F9',
@@ -50,8 +51,9 @@ export const {
     }),
   },
   media: {
-    bp1: '(min-width: 520px)',
-    bp2: '(min-width: 900px)',
+    bp1: '(max-width: 500px)',
+    bp2: '(max-width: 900px)',
+    bp3: '(max-width: 1100px)',
   },
 })
 

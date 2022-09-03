@@ -60,7 +60,7 @@ export const CheckoutSummary = () => {
   })
 
   const confirmOrder = (data: deliveryFormData) => {
-    console.log(data)
+    console.log('ASDASD', data)
   }
 
   return (
